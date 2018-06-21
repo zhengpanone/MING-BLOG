@@ -502,7 +502,6 @@ wait有控制功能
 
 --------------
 
-.. figure:: https://i.loli.net/2018/04/30/5ae6ce87421aa.jpg
-   :alt: 快关注一下，成为Python高手
+.. figure:: https://i.loli.net/2018/06/19/5b29283fdd19f.png
+   :alt: 关注公众号，获取最新文章
 
-   快关注一下，成为Python高手

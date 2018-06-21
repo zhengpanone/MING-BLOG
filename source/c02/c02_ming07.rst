@@ -380,10 +380,9 @@
 
 --------------
 
-.. figure:: https://i.loli.net/2018/04/30/5ae6ce87421aa.jpg
+.. figure:: https://i.loli.net/2018/06/19/5b29283fdd19f.png
    :alt: 关注公众号，获取最新文章
 
-   关注公众号，获取最新文章
 
 .. |image0| image:: https://i.loli.net/2018/05/19/5affbd70eddbf.png
 .. |image1| image:: https://i.loli.net/2018/05/19/5affd48c34e3f.png

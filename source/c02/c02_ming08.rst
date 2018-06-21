@@ -353,11 +353,6 @@ StopIteration(expr)异常。
 
 --------------
 
-好了，今天就讲这些。
-
---------------
-
-.. figure:: https://i.loli.net/2018/04/30/5ae6ce87421aa.jpg
+.. figure:: https://i.loli.net/2018/06/19/5b29283fdd19f.png
    :alt: 关注公众号，获取最新文章
 
-   关注公众号，获取最新文章
