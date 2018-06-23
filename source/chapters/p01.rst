@@ -9,7 +9,7 @@
 - 廖雪峰的Python教程_
 - 简明Python教程_
 
-.. _廖雪峰Python教程: https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000 
+.. _廖雪峰的Python教程: https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000 
 .. _简明Python教程: http://www.kuqin.com/abyteofpython_cn/ 
 
 

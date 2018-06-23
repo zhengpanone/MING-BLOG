@@ -14,6 +14,8 @@ Contents:
    :glob:
    
    preface
+   bookmark
    chapters/*
+   leetcode/*
    aboutme
    roadmap
