@@ -1,0 +1,163 @@
+图解九大经典排序算法（一）
+=============================
+
+二叉树排序 堆排序 希尔排序
+
+排序算法，可谓是算法中的基础，在面试中，也是面试官最喜欢考察的。经常会让你手写一个选择排序、冒泡排序，如果能在最短的时间内顺畅地写出来，一定会让面试官眼前一亮。
+
+这次我准备了三篇文章，以最通俗简短的语言，配上最直观的排序图解，最后附带优雅的Python代码，一步一步带你入门排序算法。
+
+最后一篇文章，会给大家放个大招，以一个视频的方式，来直观对比下各大排序算法的执行效率。大家敬请期待。
+
+这一篇，先来看看前四个比较常见的排序算法。
+
+快速排序
+--------
+
+时间复杂度：O(nlog\_2(n)) 
+空间复杂度：O(log2n) ~ O(n))
+
+**排序原理**\ ：选取一个数组中的某个数，将整个数组分为两个子数组（小于此数的为一组，大于此数的为一组）。然后对分出的子数组，重复以上步骤。
+
+**原理图解**\ ： |快速排序|
+
+代码实现：
+
+.. code:: python
+
+    def quick_sort(array, reverse=False):
+        if len(array) > 0:
+            pivot = array[0]
+            # 这里使用列表生成式，是为了代码可读性。
+            # 这里其实应该使用的是for循环，不然每递归一次就多循环了一次。
+            less = [x for x in array if x < pivot]
+            greater = [x for x in array if x > pivot]
+            # 正序
+            if not reverse:
+                return  quick_sort(less, reverse) + [pivot] + quick_sort(greater, reverse)
+            # 倒序
+            else:
+                return quick_sort(greater, reverse) + [pivot] + quick_sort(less, reverse)
+        return []
+
+冒泡排序
+--------
+
+时间复杂度：O(n^2) 
+空间复杂度：O(1)
+
+**排序原理**\ ：对相邻的元素进行两两比较，顺序相反则进行交换，这样，每一趟会将最小或最大的元素“浮”到顶端，最终达到完全有序。
+
+**原理图解**\ ： |冒泡排序|
+
+代码实现：
+
+.. code:: python
+
+    def bubble_sort(array, reverse=False):
+        length = len(array)
+        # 循环length次，每一次都选出一个最大/小值，浮到最后。
+        for i in range(length):
+            end = length-i
+            for k in range(end):
+                # 正序
+                if not reverse:
+                    if k+1 < end and array[k] > array[k+1]:
+                        array[k+1],array[k] = array[k],array[k+1]
+                # 倒序
+                else:
+                    if k+1 < end and array[k] < array[k+1]:
+                        array[k+1],array[k] = array[k],array[k+1]
+        return array
+
+选择排序
+--------
+
+时间复杂度：O(n^2) 
+空间复杂度：O(1)
+
+**排序原理**\ ：遍历n趟（n为数组的长度），每一趟都从「待排序」的元素中排出最小（或最大）的元素。
+
+**原理图解**\ ： |选择排序|
+
+代码实现：
+
+.. code:: python
+
+    def select_sort(array, reverse=False):
+        length = len(array)
+        for x in range(length):
+            # 每次循环里，最大或者最小值的索引：边缘索引
+            edge_index = 0
+            for y in range(length-x):
+                # 正序
+                if not reverse:
+                    if array[y] > array[edge_index]:
+                        edge_index = y
+                # 倒序
+                else:
+                    if array[y] < array[edge_index]:
+                        edge_index = y
+            array[length-x-1],array[edge_index] = array[edge_index],array[length-x-1]
+        return array
+
+插入排序
+--------
+
+时间复杂度：O(n^2) 
+空间复杂度：O(1)
+
+**排序原理**\ ：每次将一个待排序的元素与已排序的元素进行逐一比较，直到找到合适的位置按大小插入。通俗地说，就类似我们打牌的时候，给牌进行排序。
+
+**原理图解**\ ： |image3|
+
+代码实现：
+
+.. code:: python
+
+    def insert_sort(array,reverse=False):
+        length = len(array)
+        for index in range(1,length):
+            # 当前要比较的值
+            current_value = array[index]
+            position = index
+            # 正序
+            if not reverse:
+                while position>0 and array[position-1]>current_value:
+                    array[position] = array[position-1]
+                    position -= 1
+                array[position] = current_value
+            # 倒序
+            else:
+                while position>0 and array[position-1]<current_value:
+                    array[position] = array[position-1]
+                    position -= 1
+                array[position] = current_value
+        return array
+
+附：网上看到一种简洁的写法，但是由于内部使用了insert函数，效率其实并不高，可以做为理解使用。这代码只是正序的哦。
+
+.. code:: python
+
+    def insert_sort(array):
+        for i in range(len(array)):
+            for j in range(i):
+                if array[i] < array[j]:
+                    array.insert(j, array.pop(i))
+                    break
+        return array
+
+参考文档
+--------
+
+-  `Python排序算法全解 <http://interactivepython.org/runestone/static/pythonds/SortSearch/toctree.html>`__
+
+.. |快速排序| image:: http://ovzwokrcz.bkt.clouddn.com/Fpj4DFN_YCtfmJwb_85QnsuIVLqk
+.. |冒泡排序| image:: http://ovzwokrcz.bkt.clouddn.com/FvbrVECeq58hY8TptG4ilkL5Owcc
+.. |选择排序| image:: http://ovzwokrcz.bkt.clouddn.com/FmZ_24t62gF32Dg3AgtZe-U5OuLY
+.. |image3| image:: http://ovzwokrcz.bkt.clouddn.com/FmLrNuhfNcnYnLGoYJv-YbpBPV7n
+
+--------------
+
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/5b29283fdd19f.png
+   :alt: 关注公众号，获取最新文章
