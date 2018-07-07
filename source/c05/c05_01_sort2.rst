@@ -212,9 +212,9 @@
 基数排序
 --------
 
-**时间复杂度**\ ：$O(logR(B))$，B是真数（0-9），R是基数（个十百）
+**时间复杂度**\ ：O(logR(B))$，B是真数（0-9），R是基数（个十百）
 
-**空间复杂度**\ ：$O(1)
+**空间复杂度**\ ：O(1)
 
 
 **排序思想**\ ：是一种非比较型整数排序算法。其排序原理是，将所有待比较数值（正整数）统一为同样的数位长度，数位较短的数前面补零。然后，从最低位（个位）开始，依次进行一次排序。这样从最低位排序一直到最高位排序完成以后,
@@ -261,15 +261,7 @@ sgnificant digital)，LSD 的排序方式由键值的最右边开始，而 MSD
             return array
         return array[::-1]
 
-参考文章
---------
 
-https://www.cnblogs.com/chengxiao/p/6104371.html
-http://blog.51cto.com/jx610/1702260
-http://bubkoo.com/2014/01/14/sort-algorithm/heap-sort/
-https://www.cnblogs.com/chengxiao/p/6194356.html
-https://cloud.tencent.com/developer/article/1081001
-http://bubkoo.com/2014/01/15/sort-algorithm/radix-sort/
 
 .. |image0| image:: http://ovzwokrcz.bkt.clouddn.com/Fm44FD0KE9Y4RM7MF3knlGVCJba4
 .. |希尔排序| image:: http://ovzwokrcz.bkt.clouddn.com/FqTP6YjNoM52fA-bA8pSPdbLgcZh

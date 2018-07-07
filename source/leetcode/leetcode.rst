@@ -14,6 +14,11 @@ LeetCode 提交答案后，可以知道排名，让自己知道自己的代码�
 
 经过一系列的考量后，我还是选择大家熟知的 LeetCode ，因为这里的题目比较有挑战性，也比较权威，许多大公司都会在上面出题给求职者。
 
+参考文档：
+
+- `LeetCode题库- 中文 <https://leetcode-cn.com/problemset/all/>`_
+- `LeetCode Python 代码实现· GitHub <https://github.com/kamyu104/LeetCode/tree/master/Python>`_
+- `《LeetBook(LeetCode详解)》· GitBook <https://legacy.gitbook.com/book/hk029/leetbook/details>`_
 
 
 本章节，会持续更新，敬请关注...
