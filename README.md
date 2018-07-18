@@ -1,9 +1,5 @@
 # MING's Blog
 
->**作者**：MING
-**微信**：mrbensonwon
-**公众号**：Ms的编程时光
-
 这是我的个人博客（ [MING's BLOG](http://mings-blog.rtfd.io) ），主要写关于Python的一些思考总结。
 
 关于搭建教程，感兴趣的可以查看这边：[Sphinx 搭建博客的图文教程](https://github.com/BingmingWong/MING-BLOG/blob/master/source/c04/c04_03.rst)
@@ -27,9 +23,9 @@
 - 2.6 [消息队列补充及如何创建线程池](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_06.html)
 - 2.7 [从生成器使用入门协程]((http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_07.html))
 - 2.8 [深入理解yield from语法]((http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_08.html))
-- 2.9 [初识异步IO框架：asyncio 上篇]((http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_09.html))
-- 2.10 [学习异步IO框架：asyncio 中篇]((http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_10.html))
-- 2.11 [实战异步IO框架：asyncio 下篇]((http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_11.html))
+- 2.9 [初识异步IO框架：asyncio 上篇](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_09.html)
+- 2.10 [学习异步IO框架：asyncio 中篇](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_10.html)
+- 2.11 [实战异步IO框架：asyncio 下篇](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_11.html)
 
 ## 第三章：高级编程
 - 3.1 [装饰器从入门到高阶](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c03_01.html)
