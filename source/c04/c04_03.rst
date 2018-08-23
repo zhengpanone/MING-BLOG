@@ -12,7 +12,7 @@
 
 为了使自己的文章能有一个比较完整的体系。经过一番探索之后，能满足我的基本要求的有如下两种：
 
-- GitHub Wiki，适合做知识整理，但排版一般，不方便查看。 
+- GitHub Wiki，适合做知识整理，但排版一般，不方便查看。
 - GitBook，样式不好看，访问速度慢。
 
 由于以上两种都有各自的不足的地方，所以我最后选择了一个完美的解决方案：Markdown+Pandoc+Sphinx+GitHub+ReadtheDocs
@@ -165,7 +165,7 @@ how\_to\_be\_a\_rich\_man.rst（至于什么是rst格式呢，请自行搜索引
     .. toctree::
        :maxdepth: 2
        :caption: Contents:
-       
+
        how_to_be_a_rich_man
 
 然后删除这几行
@@ -264,14 +264,14 @@ how\_to\_be\_a\_rich\_man.rst（至于什么是rst格式呢，请自行搜索引
 参考文档
 ----------
 
-- Sphinx配置MarkDown解析：http://www.sphinx-doc.org/en/master/usage/markdown.html 
+- Sphinx配置MarkDown解析：http://www.sphinx-doc.org/en/master/usage/markdown.html
 - Sphinx使用手册(部分汉化)：http://www.pythondoc.com/sphinx/contents.html
-- 搭建参考文章：https://www.xncoding.com/2017/01/22/fullstack/readthedoc.html 
+- 搭建参考文章：https://www.xncoding.com/2017/01/22/fullstack/readthedoc.html
 
 
 --------------
 
-.. figure:: http://ovzwokrcz.bkt.clouddn.com/5b29283fdd19f.png
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
    :alt: 关注公众号，获取最新文章
 
 

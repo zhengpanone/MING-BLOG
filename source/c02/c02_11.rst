@@ -217,9 +217,8 @@
 
 --------------
 
-.. figure:: http://ovzwokrcz.bkt.clouddn.com/5b29283fdd19f.png
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
    :alt: 关注公众号，获取最新文章
-
 
 .. |image0| image:: https://i.loli.net/2018/06/03/5b13ba8525bcf.png
 .. |image1| image:: https://i.loli.net/2018/06/03/5b13ba9f66baa.png

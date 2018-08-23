@@ -71,3 +71,9 @@ C3 算法，如果你还不清楚，可以点击我的另一篇文章 ，了解�
 --------
 
 -  https://www.cnblogs.com/aademeng/articles/7262520.html
+
+
+--------------
+
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
+   :alt: 关注公众号，获取最新文章

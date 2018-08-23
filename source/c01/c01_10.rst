@@ -334,3 +334,8 @@ Python 中的 def
 --------
 
 -  https://farer.org/2017/11/29/python-ellipsis-object/
+
+--------------
+
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
+   :alt: 关注公众号，获取最新文章

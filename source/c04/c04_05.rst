@@ -163,3 +163,7 @@ https://www.jianshu.com/p/16b36b912b02
 .. |image10| image:: http://ovzwokrcz.bkt.clouddn.com/Snipaste_2018-08-01_23-52-23.png
 .. |image11| image:: http://ovzwokrcz.bkt.clouddn.com/Snipaste_2018-08-01_23-40-34.png
 
+--------------
+
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
+   :alt: 关注公众号，获取最新文章

@@ -641,3 +641,7 @@ ewe >对于一个长度为n的已排序数列a。 若n为奇数，中位数为a[
 .. |image11| image:: https://i.loli.net/2018/06/14/5b22825ed7f96.png
 .. |image12| image:: https://i.loli.net/2018/06/14/5b22825ed9a74.png
 
+--------------
+
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
+   :alt: 关注公众号，获取最新文章
