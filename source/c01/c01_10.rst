@@ -330,12 +330,214 @@ Python 中的 def
     print("hello")
     print ("hello")
 
+	
+11. 奇怪的字符串
+------------
+
+示例一
+
+.. code:: python
+
+    # Python2.7
+    >>> a = "Hello_Python"
+    >>> id(a)
+    32045616
+    >>> id("Hello" + "_" + "Python")
+    32045616
+
+    # Python3.7
+    >>> a = "Hello_Python"
+    >>> id(a)
+    38764272
+    >>> id("Hello" + "_" + "Python")
+    32045616
+
+示例二
+
+.. code:: python
+
+    >>> a = "MING"
+    >>> b = "MING"
+    >>> a is b
+    True
+
+    # Python2.7
+    >>> a, b = "MING!", "MING!"
+    >>> a is b
+    True
+
+    # Python3.7
+    >>> a, b = "MING!", "MING!"
+    >>> a is b
+    False
+
+示例三
+
+.. code:: python
+
+    # Python2.7
+    >>> 'a' * 20 is 'aaaaaaaaaaaaaaaaaaaa'
+    True
+    >>> 'a' * 21 is 'aaaaaaaaaaaaaaaaaaaaa'
+    False
+
+    # Python3.7
+    >>> 'a' * 20 is 'aaaaaaaaaaaaaaaaaaaa'
+    True
+    >>> 'a' * 21 is 'aaaaaaaaaaaaaaaaaaaaa'
+    True
+
+详细解释这么不多说了（比较多），感兴趣的朋友，可以加我微信交流。
+
+12. 两次 return
+-----------
+
+我们都知道，try…finally…
+语句的用法，不管try里面是正常执行还是报异常，最终都能保证finally能够执行。
+
+同时，我们又知道，一个函数里只要遇到 return 函数就会立马结束。
+
+基于以上这两点，我们来看看这个例子，到底运行过程是怎么样的？
+
+::
+
+    >>> def func():
+    ...     try:
+    ...         return 'try'
+    ...     finally:
+    ...         return 'finally'
+    ...
+    >>> func()
+    'finally'
+
+惊奇的发现，在\ ``try``\ 里的return居然不起作用。
+
+原因是，在try…finally…语句中，try中的return会被直接忽视，因为要保证finally能够执行。
+
+
+13. for 死循环
+----------
+
+for 循环可以说是 基础得不能再基础的知识点了。
+
+但是如果让你用 for 写一个死循环，你会写吗？（问题来自群友 陈**）
+
+这是个开放性的问题，在往下看之前，建议你先尝试自己思考，你会如何解答。
+
+好了，如果你还没有思路，那就来看一下 一个海外 MIT 群友的回答:
+
+::
+
+    for i in iter(int, 1):pass
+
+是不是懵逼了。iter 还有这种用法？这为啥是个死循环？
+
+这真的是个冷知识，关于这个知识点，你如果看中文网站，可能找不到相关资料。
+
+还好你可以通过 IDE 看py源码里的注释内容，介绍了很详细的使用方法。
+
+原来iter有两种使用方法，通常我们的认知是第一种，将一个列表转化为一个迭代器。
+
+而第二种方法，他接收一个 callable对象，和一个sentinel
+参数。第一个对象会一直运行，直到它返回 sentinel 值才结束。 |image0|
+
+那\ ``int`` 呢，这又是一个知识点，int
+是一个内建方法。通过看注释，可以看出它是有默认值0的。你可以在终端上输入
+``int()`` 看看是不是返回0。 |image1|
+
+由于int() 永远返回0，永远返回不了1，所以这个 for
+循环会没有终点。一直运行下去。
+
+这些问题和答案都源自于群友的智慧。如果你也想加入我们的讨论中，请到公众号后台，添加我个人微信。
+
+
+14. 小整数池
+--------
+
+先看例子。
+
+::
+
+    >>> a = -6
+    >>> b = -6
+    >>> a is b
+    False
+
+    >>> a = 256
+    >>> b = 256
+    >>> a is b
+    True
+
+    >>> a = 257
+    >>> b = 257
+    >>> a is b
+    False
+
+    >>> a = 257; b = 257
+    >>> a is b
+    True
+
+为避免整数频繁申请和销毁内存空间，Python 定义了一个小整数池 [-5, 256]
+这些整数对象是提前建立好的，不会被垃圾回收。
+
+以上代码请在
+终端Python环境下测试，如果你是在IDE中测试，并不是这样的效果。
+
+那最后一个示例，为啥又是True？
+
+因为当你在同一行里，同时给两个变量赋同一值时，解释器知道这个对象已经生成，那么它就会引用到同一个对象。如果分成两成的话，解释器并不知道这个对象已经存在了，就会重新申请内存存放这个对象。
+
+
+15. intern机制
+----------
+
+字符串类型作为Python中最常用的数据类型之一，Python解释器为了提高字符串使用的效率和使用性能，做了很多优化.
+
+例如：Python解释器中使用了
+intern（字符串驻留）的技术来提高字符串效率，什么是intern机制？就是同样的字符串对象仅仅会保存一份，放在一个字符串储蓄池中，是共用的，当然，肯定不能改变，这也决定了字符串必须是不可变对象。
+
+.. code:: python
+
+    >>> s1="hello"
+    >>> s2="hello"
+    >>> s1 is s2
+    True
+
+    # 如果有空格，默认不启用intern机制
+    >>> s1="hell o"
+    >>> s2="hell o"
+    >>> s1 is s2
+    False
+
+    # 如果一个字符串长度超过20个字符，不启动intern机制
+    >>> s1 = "a" * 20
+    >>> s2 = "a" * 20
+    >>> s1 is s2
+    True
+
+    >>> s1 = "a" * 21
+    >>> s2 = "a" * 21
+    >>> s1 is s2
+    False
+
+    >>> s1 = "ab" * 10
+    >>> s2 = "ab" * 10
+    >>> s1 is s2
+    True
+
+    >>> s1 = "ab" * 11
+    >>> s2 = "ab" * 11
+    >>> s1 is s2
+    False
+
+
+.. |image0| image:: http://ovzwokrcz.bkt.clouddn.com/18-9-1/35831241.jpg
+.. |image1| image:: http://ovzwokrcz.bkt.clouddn.com/Fnxd5APz3fNbcUeQr0P3in0hGDPo
+
+
 参考文档
 --------
 
 -  https://farer.org/2017/11/29/python-ellipsis-object/
-
---------------
-
-.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
-   :alt: 关注公众号，获取最新文章
+-  https://github.com/satwikkansal/wtfpython#structure-of-the-examples
+-  https://www.cnblogs.com/greatfish/p/6045088.html
