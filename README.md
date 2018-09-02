@@ -11,7 +11,12 @@
 - 1.3 [谈谈深贝和浅拷贝的区别](http://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_03.html)
 - 1.4 [什么是猴子补丁？](http://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_04.html)
 - 1.5 [深入理解闭包与变量作用域](http://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_05.html)
-- 1.6 [15个Pythonic的代码示例](http://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_07.html)
+- 1.6 [深入理解元组存在的意义](http://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_07.html)
+- 1.7 [15个Pythonic的代码示例
+](https://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_06.html)
+- 1.8 [新式类和经典类的区别？](https://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_08.html)
+- 1.9 [多继承与Mixin设计模式](https://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_09.html)
+- 1.10 [盘点 Python 中那些冷知识](https://mings-blog.readthedocs.io/zh_CN/latest/c01/c01_10.html)
 
 ## 第二章：并发编程
 - 2.1 [从性能角度来初探并发编程](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c02_01.html)
@@ -35,13 +40,21 @@
 - 4.1 [虚拟环境的搭建与使用](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c04_01.html)
 - 4.2 [Xshell的高效使用手册](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c04_02.html)
 - 4.3 [30分钟教你搭建顔值超高的博客](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c04_03.html)
+- 4.4 [Jupyter NoteBook 的使用指南](https://mings-blog.readthedocs.io/zh_CN/latest/c04/c04_04.html)
+- 4.5 [Win10 + Ubuntu 双系统安装指南](https://mings-blog.readthedocs.io/zh_CN/latest/c04/c04_05.html)
 
 ## 第五章：算法教程
 - 5.1 [图解九大经典排序算法（一）](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c05_01.html)
 - 5.2 [图解九大经典排序算法（二）](http://mings-blog.readthedocs.io/zh_CN/latest/c02/c05_02.html)
 
+## 第六章：数据分析
+- 6.1 [一张图带你入门matplotlib](https://mings-blog.readthedocs.io/zh_CN/latest/c06/c06_01.html)
+- 6.2 [详解六种可视化图表](https://mings-blog.readthedocs.io/zh_CN/latest/c06/c06_02.html)
+- 6.3 [如何绘制正余弦函数图象](https://mings-blog.readthedocs.io/zh_CN/latest/c06/c06_03.html)
+- 6.4 [子图与子区 难点突破](https://mings-blog.readthedocs.io/zh_CN/latest/c06/c06_04.html)
+
 ## LeetCode Challenge
 - [NO.1-10](http://mings-blog.readthedocs.io/zh_CN/latest/lc01/1-10.html)
 
 ---
-![欢迎关注个人公众号](http://ovzwokrcz.bkt.clouddn.com/5b29283fdd19f.png)
+![欢迎关注个人公众号](http://ovzwokrcz.bkt.clouddn.com/Weixin.png)
