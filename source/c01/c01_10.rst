@@ -541,3 +541,6 @@ intern（字符串驻留）的技术来提高字符串效率，什么是intern�
 -  https://farer.org/2017/11/29/python-ellipsis-object/
 -  https://github.com/satwikkansal/wtfpython#structure-of-the-examples
 -  https://www.cnblogs.com/greatfish/p/6045088.html
+
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
+   :alt: 关注公众号，获取最新文章

@@ -75,5 +75,5 @@ C3 算法，如果你还不清楚，可以点击我的另一篇文章 ，了解�
 
 --------------
 
-.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
    :alt: 关注公众号，获取最新文章

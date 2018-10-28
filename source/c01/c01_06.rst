@@ -104,5 +104,5 @@ Python中有一个基础的数据结构，叫做元组（tuple），但是一般
 
 |image0|
 
-.. |image0| image:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
-
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
+   :alt: 关注公众号，获取最新文章
