@@ -108,6 +108,8 @@ Github
 
 -  `廖雪峰的 Git
    教程 <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000>`__
+-  `Git-Book
+   教程 <https://git-scm.com/book/zh/v2/>`__
 
 在线工具
 --------
