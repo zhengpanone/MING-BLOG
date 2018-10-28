@@ -243,5 +243,5 @@ NoteBook 既然支持 Markdown ，你已经也能想到它可以用来记录学�
 
 --------------
 
-.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
    :alt: 关注公众号，获取最新文章

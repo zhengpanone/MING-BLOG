@@ -1,4 +1,4 @@
-自动生成图像视频
+6.6 自动生成图像视频
 ================
 
 01. 准备工作
@@ -140,3 +140,5 @@ Jupyter NoteBook 里观察整个变化的过程。
 .. |image0| image:: http://ovzwokrcz.bkt.clouddn.com/18-9-1/97982527.jpg
 .. |image1| image:: http://ovzwokrcz.bkt.clouddn.com/18-9-1/32725284.jpg
 
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
+   :alt: 关注公众号，获取最新文章

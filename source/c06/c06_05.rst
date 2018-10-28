@@ -1,4 +1,4 @@
-绘制酷炫的gif动态图
+6.5 绘制酷炫的gif动态图
 =========================
 
 01. 准备工作
@@ -137,5 +137,6 @@ matplotlib 给我们提供了一个函数，\ ``animation.FuncAnimation``
 
 绘制出来的结果如下： |image0|
 
-.. |image0| image:: http://ovzwokrcz.bkt.clouddn.com/18-10-21/95599080.jpg
 
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
+   :alt: 关注公众号，获取最新文章

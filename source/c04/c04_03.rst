@@ -271,10 +271,6 @@ how\_to\_be\_a\_rich\_man.rst（至于什么是rst格式呢，请自行搜索引
 
 --------------
 
-.. figure:: http://ovzwokrcz.bkt.clouddn.com/Weixin.png
-   :alt: 关注公众号，获取最新文章
-
-
 .. |image0| image:: http://ovzwokrcz.bkt.clouddn.com/FnEZcgk6Frc2RQSOvsOE9hcYxjuk
 .. |image1| image:: http://ovzwokrcz.bkt.clouddn.com/FqsPadimKGTPMfh1T8CvJcbQJ1Ij
 .. |image2| image:: http://ovzwokrcz.bkt.clouddn.com/FiE6eIHnar1702oVUxF9632vh8y-
@@ -287,3 +283,5 @@ how\_to\_be\_a\_rich\_man.rst（至于什么是rst格式呢，请自行搜索引
 .. |image9| image:: http://ovzwokrcz.bkt.clouddn.com/FoO03n5iSuk6hC0OFab6EzKHoKhG
 .. |image10| image:: http://ovzwokrcz.bkt.clouddn.com/FinA5jEGN9K9tw2A2fj8IRUyF0VT
 
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
+   :alt: 关注公众号，获取最新文章

@@ -12,5 +12,5 @@
 
 --------------------------------------------
 
-.. image:: https://i.loli.net/2018/06/19/5b29283fdd19f.png
-
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
+   :alt: 关注公众号，获取最新文章

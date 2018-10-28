@@ -19,3 +19,6 @@ Contents:
    leetcode/*
    aboutme
    roadmap
+
+.. figure:: http://ovzwokrcz.bkt.clouddn.com/18-10-28/9446245.jpg
+   :alt: 关注公众号，获取最新文章
